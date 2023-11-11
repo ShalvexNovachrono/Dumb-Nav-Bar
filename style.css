@@ -1,0 +1,119 @@
+body {    
+    font-family: "DDG_ProximaNova","DDG_ProximaNova_UI_0","DDG_ProximaNova_UI_1","DDG_ProximaNova_UI_2","DDG_ProximaNova_UI_3","DDG_ProximaNova_UI_4","DDG_ProximaNova_UI_5","DDG_ProximaNova_UI_6","Proxima Nova","Helvetica Neue","Helvetica","Segoe UI","Nimbus Sans L","Liberation Sans","Open Sans",FreeSans,Arial,sans-serif;
+    overflow: hidden;
+}
+
+.nav {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    z-index: 3;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav .hover {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    background: #460abb;
+    border-radius: 13px;
+    border: none;
+    transition: 0.3s;
+    padding: 0px 10px;
+}
+
+
+#hidden_items {
+    z-index: 3;
+    position: absolute;
+    display: none;
+    height: 50px;
+    align-items: center;
+    background: #034d82;
+    border-radius: 13px;
+    width: fit-content;
+    padding: 2.5px 12.5px !important;
+}
+
+#hidden_items .items_container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 100%;
+}
+
+.items {
+    transition: 0.3s;
+    padding: 4px 10px;
+    background: #280174;
+    color: floralwhite;
+    text-align: center;
+}
+
+.show {
+    transition: 0.3s;
+    padding: 1.5px 11.5px;
+    display: block !important;
+}
+
+.animationIthink {
+    transition: 0.3s;
+    padding: 2px 12px;
+}
+
+.closeBtn {
+    transition: 0.3s;
+    padding: 3px !important;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    border: none;
+    border-radius: 13px !important;
+}
+
+.items + .closeBtn:hover {
+    transition: width 1.5s, height 1.5s, padding 1.5s;
+    padding: 5px !important;
+    width: 24px;
+    height: 24px;
+    background: #cd1b1bc2;
+}
+
+.items:hover {
+    transition: 0.5s;
+    padding: 6px 12px !important;
+    background: #0d76cf7d;
+    border-radius: 13px !important;
+}
+
+.hoverBtn {
+    z-index: 2;
+    color: wheat;
+    transition: 0.5s;
+}
+
+.hoverBtn:hover {
+    transition: 0.2s;
+    padding: 3.5px 12.5px;
+}
+
+.show2 {
+    display: block !important;
+}
+
+#getBiggerClose {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 1.5s, height 1.5s;
+    height: 0px;
+    width: 0px;
+    z-index: 1;
+    border-radius: 100%;
+}
